@@ -1,0 +1,205 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.colorBlanco, .colorBlanco nav ul li a{
+    color: white;
+    background-color: black;
+    font-family: 'Changa', sans-serif;
+
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0.5px
+}
+
+header nav ul li:hover{
+    text-decoration: underline;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.colorBlanco h1{
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+}
+
+h2{
+    font-family: 'Changa', sans-serif;
+}
+
+.barra, .barra ul li a{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+form{
+    width: 450px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    border: none;
+}
+
+textarea { 
+    min-height: 70px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+#boton{
+    background-color: dimgray;
+    color: white;
+}
+
+
+
+@media (max-width:480px) {
+    form{
+        width: 100%;
+    }
+}
+
+#redes{ 
+    background-color: black;
+    padding: 20px 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+body{ 
+    background-color: #191919;
+}
+
+h2{
+    color: white;
+    margin: 10px;
+}
+
+p{
+    color: white;
+    margin: 10px;
+}
+
+ol li{
+    color: white;
+    margin: 30px;
+
+}
+
+
+ul li{ 
+    color: white;
+    margin: 10px;
+}
+
+.principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+    justify-items: start;
+    align-items: center;
+}
+
+.cdvg {
+    display: grid;
+    grid-area: venganzaprimavera;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cdsp { 
+    display: grid;
+    grid-area: siglopanico;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cdsetl {
+    display: grid;
+    grid-area: sangreentusluces;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cdlp {
+    display: grid;
+    grid-area: lapalabra;
+    grid-template-columns: 1fr 1fr;
+}
+
+#integrantes h2{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.banda {
+    display: flex;
+    margin: 20px;
+    flex-wrap: wrap;
+    border-color: white;
+    border: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width :768px){
+    .barra{
+        display: flex;
+        flex-direction: column;
+    }
+    .principal{
+        display: flex;
+        flex-direction: column;
+    }
+    .cdvg{
+        display: flex;
+        flex-direction: column;
+    }
+    .cdsp{
+        display: flex;
+        flex-direction: column;
+    }
+    .cdsetl{
+        display: flex;
+        flex-direction: column;
+    }
+    .cdlp{
+        display: flex;
+        flex-direction: column;
+    }
+}
