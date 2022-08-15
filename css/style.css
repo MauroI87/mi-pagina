@@ -31,10 +31,13 @@ a{
     font-size: 45px;
     text-align: center;
     font-family: 'Kalam', cursive;
+    color: red;
 }
 
 h2{
     font-family: 'Changa', sans-serif;
+    text-decoration: underline;
+
 }
 
 .barra, .barra ul li a{
@@ -97,8 +100,10 @@ body{
 }
 
 h2{
-    color: white;
+    color: darkred;
     margin: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
 }
 
 p{
@@ -122,8 +127,9 @@ ul li{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 20px;
-    justify-items: start;
+    justify-items: center;
     align-items: center;
+    text-align: justify;
 }
 
 .cds {
@@ -173,6 +179,7 @@ ul li{
 .integrantesbanda { 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .banda {
@@ -222,4 +229,16 @@ ul li{
 .card {
     margin: 10px;
     padding: 5px;
+    text-align: center;
+}
+
+.shows {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-primary { 
+    color: red;
+    background-color: black;
+    border: 2px solid black;
 }
