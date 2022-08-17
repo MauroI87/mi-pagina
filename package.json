@@ -1,0 +1,23 @@
+{
+  "name": "proyecto-sdp---iriarte-mauro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauroiriarte/mi-pagina.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauroiriarte/mi-pagina/issues"
+  },
+  "homepage": "https://github.com/mauroiriarte/mi-pagina#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
