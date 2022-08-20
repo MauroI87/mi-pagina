@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
 .colorBlanco {
   color: white;
   background-color: black;
@@ -16,6 +22,7 @@
 }
 
 header nav ul li {
+  position: sticky;
   display: inline-block;
   padding: 0.5px;
 }
@@ -36,21 +43,13 @@ a {
 }
 
 h2 {
-  font-family: "Changa", sans-serif;
+  font-family: "Staatliches", cursive;
   text-decoration: underline;
-  color: darkred;
+  color: red;
   margin: 10px;
   text-align: center;
   text-shadow: 2px 2px 2px black;
-}
-
-.barra {
-  display: flex;
-  justify-content: space-evenly;
-}
-.barra ul li a {
-  display: flex;
-  justify-content: space-evenly;
+  font-size: 37px;
 }
 
 form {
@@ -90,12 +89,20 @@ textarea {
   cursor: pointer;
 }
 
-#redes {
+.buttons {
   background-color: black;
-  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons a {
+  font-size: 25px;
   text-align: center;
-  justify-content: space-between;
-  color: darkred;
+  color: #f1f1f1;
+  border-radius: 5%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin: 15px;
+  padding: 15px;
 }
 
 body {
@@ -120,11 +127,27 @@ ol li {
   align-items: center;
   text-align: justify;
 }
+.principal p {
+  font-family: "Changa", sans-serif;
+  font-size: 17px;
+}
 
-.cds {
+.cds1 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
+}
+
+.cds2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 25px;
 }
 
 .cdvg {
@@ -132,7 +155,7 @@ ol li {
   border: 2px solid white;
   padding: 5px;
   margin: 10px;
-  background-color: #191919;
+  background-color: black;
   align-items: center;
   flex-direction: column;
 }
@@ -142,7 +165,7 @@ ol li {
   border: 2px solid white;
   padding: 5px;
   margin: 10px;
-  background-color: #191919;
+  background-color: black;
   align-items: center;
 }
 
@@ -151,7 +174,7 @@ ol li {
   border: 2px solid white;
   padding: 5px;
   margin: 10px;
-  background-color: #191919;
+  background-color: black;
   align-items: center;
 }
 
@@ -160,7 +183,16 @@ ol li {
   border: 2px solid white;
   padding: 5px;
   margin: 10px;
-  background-color: #191919;
+  background-color: black;
+  align-items: center;
+}
+
+.cdma {
+  border-radius: 10px;
+  border: 2px solid white;
+  padding: 5px;
+  margin: 10px;
+  background-color: black;
   align-items: center;
 }
 
@@ -176,16 +208,21 @@ ol li {
 }
 .banda p {
   margin: 0;
-}
-
-.card-text {
-  color: black;
+  font-family: "Kalam", cursive;
+  font-size: 20px;
 }
 
 .card {
   margin: 10px;
   padding: 5px;
   text-align: center;
+}
+.card .card-title {
+  font-family: "Press Start 2P", cursive;
+}
+.card .card-text {
+  color: black;
+  font-family: "Kalam", cursive;
 }
 
 .shows {
@@ -195,9 +232,10 @@ ol li {
 }
 
 .btn-primary {
-  color: red;
+  color: white;
   background-color: black;
   border: 2px solid black;
+  font-family: "Changa", sans-serif;
 }
 
 @media (max-width: 480px) {

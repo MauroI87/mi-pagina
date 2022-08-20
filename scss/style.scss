@@ -4,7 +4,11 @@
 @import './componentes/discografia';
 
 
-
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: content-box;
+}
 
 
 .colorBlanco {
@@ -33,6 +37,7 @@ header {
 	nav {
 		ul {
 			li {
+				position: sticky;
 				display: inline-block;
 				padding: 0.5px;
 				&:hover {
@@ -53,24 +58,13 @@ a {
 	text-decoration: none;
 }
 h2 {
-	font-family: 'Changa', sans-serif;
+	font-family: 'Staatliches', cursive;
 	text-decoration: underline;
-	color: $colorbordo;
+	color: $colorrojo;
 	margin: 10px;
 	text-align: center;
 	text-shadow: 2px 2px 2px $colornegro;
-}
-.barra {
-	display: flex;
-	justify-content: space-evenly;
-	ul {
-		li {
-			a {
-				display: flex;
-				justify-content: space-evenly;
-			}
-		}
-	}
+	font-size: 37px;
 }
 form {
 	width: 450px;
@@ -105,13 +99,21 @@ textarea {
 	background-color: $colorgrisclaro;
 	color: $colorblanco
 }
-#redes {
-	background-color: $colornegro;
-	padding: 20px 20px;
-	text-align: center;
-	justify-content: space-between;
-	color: $colorbordo;
-}
+.buttons {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+			a{
+				font-size: 25px;
+				text-align: center;
+				color: #f1f1f1;
+				border-radius: 5%;
+				box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+				margin: 15px;
+				padding: 15px;
+			}
+  }
 body {
 	background-color: $colorgris
 }
@@ -132,18 +134,33 @@ ol {
 	justify-items: center;
 	align-items: center;
 	text-align: justify;
+		p{ 
+			font-family: 'Changa', sans-serif;
+			font-size: 17px;
+		}
 }
-.cds {
+.cds1 {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-evenly;
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	font-size: 25px;
+}
+.cds2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	text-align: center;
+	font-family: 'Indie Flower', cursive;
+	font-size: 25px;
 }
 .cdvg {
 	border-radius: 10px;
 	border: 2px solid $colorblanco;
 	padding: 5px;
 	margin: 10px;
-	background-color: $colorgris;
+	background-color: $colornegro;
 	align-items: center;
 	flex-direction: column;
 }
@@ -152,7 +169,7 @@ ol {
 	border: 2px solid $colorblanco;
 	padding: 5px;
 	margin: 10px;
-	background-color: $colorgris;
+	background-color: $colornegro;
 	align-items: center;
 }
 .cdsetl {
@@ -160,7 +177,7 @@ ol {
 	border: 2px solid $colorblanco;
 	padding: 5px;
 	margin: 10px;
-	background-color: $colorgris;
+	background-color: $colornegro;
 	align-items: center;
 }
 .cdlp {
@@ -168,7 +185,15 @@ ol {
 	border: 2px solid $colorblanco;
 	padding: 5px;
 	margin: 10px;
-	background-color: $colorgris;
+	background-color: $colornegro;
+	align-items: center;
+}
+.cdma { 
+	border-radius: 10px;
+	border: 2px solid $colorblanco;
+	padding: 5px;
+	margin: 10px;
+	background-color: $colornegro;
 	align-items: center;
 }
 .integrantesbanda {
@@ -181,15 +206,21 @@ ol {
 	text-align: center;
 	p {
 		margin: 0;
+		font-family: 'Kalam', cursive;
+		font-size: 20px;
 	}
-}
-.card-text {
-	color: $colornegro;
 }
 .card {
 	margin: 10px;
 	padding: 5px;
 	text-align: center;
+		.card-title {
+			font-family: 'Press Start 2P', cursive;
+		}
+		.card-text{
+			color: $colornegro;
+			font-family: 'Kalam', cursive;
+		}
 }
 .shows {
 	display: flex;
@@ -197,10 +228,12 @@ ol {
 	flex-wrap: wrap;
 }
 .btn-primary {
-	color: $colorrojo;
+	color: $colorblanco;
 	background-color: $colornegro;
 	border: 2px solid $colornegro;
+	font-family: 'Changa', sans-serif;
 }
+
 @media (max-width:480px) {
 	form {
 		width: 100%;
