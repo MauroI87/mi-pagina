@@ -21,8 +21,10 @@
   color: red;
 }
 
-header nav ul li {
+header nav {
   position: sticky;
+}
+header nav ul li {
   display: inline-block;
   padding: 0.5px;
 }
@@ -99,10 +101,7 @@ textarea {
   font-size: 25px;
   text-align: center;
   color: #f1f1f1;
-  border-radius: 5%;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  margin: 15px;
-  padding: 15px;
+  margin: 20px;
 }
 
 body {
