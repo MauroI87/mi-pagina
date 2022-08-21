@@ -1,0 +1,2 @@
+Agregue Description y Keywords en el Head. 
+Todas las imagenes tienen su ALT correspondiente (Tanto los CD´s, Integrantes y Proximos shows) 

@@ -1,6 +1,7 @@
 @import './base/variables';
 @import './base/maps';
 @import './base/listas';
+@import './base/extend';
 @import './componentes/discografia';
 
 
@@ -153,45 +154,19 @@ ol {
 	font-size: 25px;
 }
 .cdvg {
-	border-radius: 10px;
-	border: 2px solid $colorblanco;
-	padding: 5px;
-	margin: 10px;
-	background-color: $colornegro;
-	align-items: center;
-	flex-direction: column;
+	@extend %especificacionescd
 }
 .cdsp {
-	border-radius: 10px;
-	border: 2px solid $colorblanco;
-	padding: 5px;
-	margin: 10px;
-	background-color: $colornegro;
-	align-items: center;
+	@extend %especificacionescd
 }
 .cdsetl {
-	border-radius: 10px;
-	border: 2px solid $colorblanco;
-	padding: 5px;
-	margin: 10px;
-	background-color: $colornegro;
-	align-items: center;
+	@extend %especificacionescd
 }
 .cdlp {
-	border-radius: 10px;
-	border: 2px solid $colorblanco;
-	padding: 5px;
-	margin: 10px;
-	background-color: $colornegro;
-	align-items: center;
+	@extend %especificacionescd
 }
 .cdma { 
-	border-radius: 10px;
-	border: 2px solid $colorblanco;
-	padding: 5px;
-	margin: 10px;
-	background-color: $colornegro;
-	align-items: center;
+	@extend %especificacionescd
 }
 .integrantesbanda {
 	display: flex;
