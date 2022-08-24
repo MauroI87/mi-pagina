@@ -201,6 +201,13 @@ ol li {
   font-family: "Changa", sans-serif;
 }
 
+#botonarriba {
+  position: fixed;
+  bottom: 8.5px;
+  right: 20px;
+  width: 40px;
+}
+
 @media (max-width: 480px) {
   form {
     width: 100%;

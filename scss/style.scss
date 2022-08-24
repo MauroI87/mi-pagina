@@ -2,6 +2,8 @@
 @import './base/maps';
 @import './base/listas';
 @import './base/extend';
+@import './base/mixin';
+@import './base/maps';
 @import './componentes/discografia';
 
 
@@ -35,8 +37,7 @@
 	}
 }
 header {
-	nav {
-		position: sticky;
+	nav { position: sticky;
 		ul {
 			li {
 				display: inline-block;
@@ -101,8 +102,8 @@ textarea {
 	color: $colorblanco
 }
 .buttons {
-	background-color: black;
-	display: flex;
+	background-color: map-get($boton, bg-color);
+	display: map-get($boton, display);
 	justify-content: center;
 	align-items: center;
 			a{
@@ -204,6 +205,13 @@ ol {
 	background-color: $colornegro;
 	border: 2px solid $colornegro;
 	font-family: 'Changa', sans-serif;
+}
+
+#botonarriba{
+	position: fixed;
+	bottom: 8.5px;
+	right: 20px;
+	width: 40px;
 }
 
 @media (max-width:480px) {

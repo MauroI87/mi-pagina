@@ -1,0 +1,14 @@
+@mixin titulos ($decoration, $color, $margin, $fontsize){
+    font-family: 'Staatliches', cursive;
+	text-decoration: $decoration;
+	color: $color;
+	margin: $margin;
+	text-align: center;
+	text-shadow: 2px 2px 2px black;
+	font-size: $fontsize;
+}
+
+$decoration: underline;
+$color: red;
+$margin: 10px;
+$fontsize: 37px; 
